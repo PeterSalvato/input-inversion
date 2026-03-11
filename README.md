@@ -1,6 +1,7 @@
 # Input Inversion
 ### Why Unstructured Human Thinking Produces Better AI Output
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18962881.svg)](https://doi.org/10.5281/zenodo.18962881)
 
 **Peter Salvato**
 Design Engineer | [petersalvato.com](https://petersalvato.com)
