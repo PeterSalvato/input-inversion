@@ -3,6 +3,8 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18962881.svg)](https://doi.org/10.5281/zenodo.18962881)
 
+**Source:** [github.com/PeterSalvato/input-inversion](https://github.com/PeterSalvato/input-inversion)
+
 **Peter Salvato**
 Design Engineer | [petersalvato.com](https://petersalvato.com)
 March 2026
@@ -89,7 +91,7 @@ The first time an idea appears in the corpus, it probably wasn't called by its f
 
 Cognitive turning points need marking as they happen, or they disappear into the stream. **Savepoint Syntax** drops machine-readable tags inline during conversation: the moment something clicked, the moment understanding shifted. When the tools re-enter the corpus later, the savepoints tell them where the important moments were.
 
-Finally, "is this good?" is twelve questions disguised as one. **Evaluation lenses** (Formwork) decompose it into independent dimensions, each assessed against its own criteria by a lens extracted from a real practitioner's body of work. The model never evaluates across multiple dimensions at once.
+Finally, "is this good?" is twelve questions disguised as one. **[LensArray](https://petersalvato.com/systems/lensarray/)** decomposes it into independent dimensions, each assessed against its own criteria by a lens extracted from a real practitioner's body of work. The model never evaluates across multiple dimensions at once.
 
 ### 4.3 The Output
 
@@ -125,7 +127,7 @@ The inverted model produces better results for three reasons:
 
 ## 6. The Bidirectional Accommodation
 
-Input inversion is one half of a bidirectional accommodation pattern described in the [accommodation design framework](https://petersalvato.com/governance/accommodation-design/) (Salvato, 2026).
+Input inversion is one half of a bidirectional accommodation pattern described in the [accommodation design framework](https://petersalvato.com/practice/accommodation-design/) (Salvato, 2026).
 
 The model receives structured input: decomposed tasks, one objective at a time, individualized evaluation criteria, context markers at cognitive turning points. This is accommodation designed for the model's processing reality.
 
@@ -181,7 +183,7 @@ The AI industry's foundational assumption, that quality output requires structur
 
 Input inversion formalizes what this evidence suggests: reverse the burden of structure from the human to the tooling. Let humans think out loud. Build tools that translate raw thinking into model-ready input. The output improves because the source material is richer, more detailed, and more honest than anything a structured prompt captures.
 
-This principle was developed through three years of applied practice and is demonstrated by a production site compiled entirely from unstructured conversational data. It extends the [accommodation design framework](https://petersalvato.com/governance/accommodation-design/) (Salvato, 2026) into a bidirectional pattern: structure for the model, freedom for the human.
+This principle was developed through three years of applied practice and is demonstrated by a production site compiled entirely from unstructured conversational data. It extends the [accommodation design framework](https://petersalvato.com/practice/accommodation-design/) (Salvato, 2026) into a bidirectional pattern: structure for the model, freedom for the human.
 
 The question for practitioners is not "how do I write a better prompt?" It is "how do I build tools that let me stop writing prompts and start thinking out loud?"
 
@@ -191,9 +193,10 @@ The question for practitioners is not "how do I write a better prompt?" It is "h
 
 The following open-source tools implement input inversion:
 
-- **[Savepoint Syntax](https://github.com/PeterSalvato/Savepoint.Protocol)**: Context preservation markup for cognitive turning points (v3.1)
-- **[Formwork Protocol](https://petersalvato.com/governance/formwork-protocol/)**: Decomposed evaluation with practitioner-extracted lenses
-- **[Formwork Skills Architecture](https://github.com/PeterSalvato/formwork)**: Accommodation tools including voice sampling, knowledge traversal, and interview
+- **[FormWork](https://petersalvato.com/systems/formwork/)**: The accommodation design process. Coordination harness for all tools during a project.
+- **[SavePoint Syntax](https://github.com/PeterSalvato/Savepoint.Protocol)**: Context preservation markup for cognitive turning points (v3.1)
+- **[LensArray](https://petersalvato.com/systems/lensarray/)**: Decomposed evaluation with practitioner-extracted lenses
+- **[Skills Architecture](https://github.com/PeterSalvato/formwork)**: Accommodation tools including voice sampling, knowledge traversal, and interview
 
 The production site [petersalvato.com](https://petersalvato.com) was compiled from unstructured conversational data using these tools.
 
@@ -210,6 +213,7 @@ The production site [petersalvato.com](https://petersalvato.com) was compiled fr
 - Squirro (2026). "RAG in 2026: Bridging Knowledge and Generative AI."
 - Fast Company (2025). "The prompt engineer job title has all but disappeared."
 - Salvato, P. (2026). "AI Governance as Accommodation Design." DOI: 10.5281/zenodo.18941231.
+- Salvato, P. (2026). "A Different Kind of Harness: AI as Cognitive Prosthetic Through Mutual Accommodation." DOI: 10.5281/zenodo.18962893.
 - Salvato, P. (2025). Savepoint Syntax v3.1. [github.com/PeterSalvato/Savepoint.Protocol](https://github.com/PeterSalvato/Savepoint.Protocol)
 
 ---
