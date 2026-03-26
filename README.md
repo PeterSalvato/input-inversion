@@ -126,7 +126,7 @@ The inverted model produces better results for three reasons:
 
 ## 6. The Bidirectional Accommodation
 
-Input inversion is one half of a bidirectional accommodation pattern described in the [accommodation design framework]https://petersalvato.com/practice/accommodation-design/) (Salvato, 2026).
+Input inversion is one half of a bidirectional accommodation pattern described in the [accommodation design framework]https://petersalvato.com/research/accommodation-design/) (Salvato, 2026).
 
 The human's processing reality: ideas lose fidelity when forced into structure at the point of capture. The act of organizing, outlining, or formatting disrupts the thinking it's trying to capture. When the burden of structure is removed, the human can talk, dictate, answer questions. What comes out carries the maker's actual voice, actual thinking, actual structure.
 
@@ -194,7 +194,7 @@ The AI industry's foundational assumption, that quality output requires structur
 
 Input inversion formalizes what this evidence suggests: reverse the burden of structure from the human to the tooling. Let humans think out loud. Build tools that translate raw thinking into model-ready input. The output improves because the source material is richer, more detailed, and more honest than anything a structured prompt captures.
 
-This principle was developed through three years of applied practice and is demonstrated by a production site compiled entirely from unstructured conversational data. It extends the [accommodation design framework]https://petersalvato.com/practice/accommodation-design/) (Salvato, 2026) into a bidirectional pattern: structure for the model, freedom for the human.
+This principle was developed through three years of applied practice and is demonstrated by a production site compiled entirely from unstructured conversational data. It extends the [accommodation design framework]https://petersalvato.com/research/accommodation-design/) (Salvato, 2026) into a bidirectional pattern: structure for the model, freedom for the human.
 
 The question for practitioners is not "how do I write a better prompt?" It is "how do I build tools that let me stop writing prompts and start thinking out loud?"
 
@@ -237,4 +237,4 @@ You are free to share and adapt this material for any purpose, including commerc
 
 ---
 
-*Peter Salvato is a design engineer based in Fort Lauderdale, FL. He studied Visual Communication at the School of Visual Arts, taught special education in Brooklyn, NY, and spent twelve years building the front end of an enterprise recruiting platform. His AI governance work applies twenty-five years of practice across construction, print production, pedagogy, enterprise software, and brand systems to the question of what AI systems actually need to produce quality output. His work is published at [petersalvato.com](https://petersalvato.com).*
+*Peter Salvato is a design engineer based in Fort Lauderdale, FL. He studied Visual Communication at the School of Visual Arts, taught special education in Brooklyn, NY, and spent thirteen years building the front end of an enterprise recruiting platform. His AI governance work applies twenty-five years of practice across construction, print production, pedagogy, enterprise software, and brand systems to the question of what AI systems actually need to produce quality output. His work is published at [petersalvato.com](https://petersalvato.com).*
