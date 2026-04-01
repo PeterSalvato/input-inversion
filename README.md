@@ -1,11 +1,14 @@
 # Input Inversion
 ### Why Unstructured Human Thinking Produces Better AI Output
 
+I spent three years proving that raw, unstructured thinking produces better AI output than careful prompts. Voice notes, unfinished sentences, arguments with myself. When purpose-built tools handle the translation, the mess produces better results than any prompt template. This paper documents why.
+
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18962881.svg)](https://doi.org/10.5281/zenodo.18962881)
 
+**Source:** [github.com/PeterSalvato/input-inversion](https://github.com/PeterSalvato/input-inversion)
 
 **Peter Salvato**
-Design Engineer | [petersalvato.com](https://petersalvato.com)
+Design Engineer | [petersalvato.com](https://petersalvato.com/)
 March 2026
 
 ---
@@ -22,7 +25,7 @@ The AI industry operates on a foundational assumption: the quality of AI output 
 
 Best-practice guidance is consistent. "Write clear, specific instructions." "Define the output format." "Use few-shot examples." "Apply chain-of-thought reasoning." "Avoid dumping unstructured data at an LLM" (LogRocket, 2025). The prompt engineering field has produced taxonomies of 58 distinct prompting techniques (Schulhoff et al., 2024) and a cottage industry of courses, certifications, and role definitions organized around the same claim: better-structured input produces better output.
 
-The assumption is intuitive. It feels obviously true. And the evidence is starting to contradict it.
+The assumption feels obviously true. And the evidence is starting to contradict it.
 
 ---
 
@@ -40,13 +43,13 @@ Andrej Karpathy (founding member of OpenAI) publicly reframed the field in June 
 
 Andrew Ng's team demonstrated the point empirically. On the HumanEval coding benchmark, GPT-3.5 with a single optimized prompt achieved 48.1% accuracy. GPT-4 with a single optimized prompt reached 67%. GPT-3.5 wrapped in an agentic workflow (multiple steps, decomposed tasks, iterative evaluation) hit 95.1%. A weaker, cheaper model nearly doubled the advanced model's performance by changing how the system worked, not what the input said.
 
-The implication is direct: optimizing the prompt has a ceiling. Designing the system around the prompt has a much higher one. The structured-input assumption optimizes the wrong layer.
+The implication is direct: prompt optimization hits diminishing returns quickly. The gains from system design are larger and they compound.
 
 ### 2.3 Voice Input Produces Richer Material
 
-Research on speech-to-text interaction consistently shows that spoken input produces more detailed, higher-quality material than typed input. Speech recognition notes averaged 320.6 words versus 180.8 for typed notes, with higher ratings for clarity, completeness, and information density.
+Research on speech-to-text interaction consistently shows that spoken input produces more detailed, higher-quality material than typed input, with higher ratings for clarity, completeness, and information density.
 
-The mechanism is straightforward. Humans speak at 125-150 words per minute and type at 40. The friction of the keyboard compresses thought. By the time a typed prompt reaches the model, the human has already edited, compressed, and filtered the raw thinking. The unfiltered version, the one that contains false starts, mid-sentence corrections, and the moment where the idea actually crystallized, never makes it into the prompt.
+The mechanism is simple. Humans speak at 125-150 words per minute and type at 40. The friction of the keyboard compresses thought. By the time a typed prompt reaches the model, the human has already edited, compressed, and filtered the raw thinking. The unfiltered version, the one that contains false starts, mid-sentence corrections, and the moment where the idea actually crystallized, never makes it into the prompt.
 
 Voice input bypasses that filter. The human thinks out loud. The full texture of the thinking reaches the system.
 
@@ -66,7 +69,7 @@ This is foundational practice in special education. A student with processing de
 
 The parallel to AI interaction is direct. A practitioner required to pre-structure their input before communicating with a model will produce less raw material for the system to work with. The prompts are cleaner. They're also thinner. The false starts, contradictions, mid-sentence direction changes, and moments of sudden clarity that characterize real thinking never reach the model. The accommodation tools that could process that raw material into high-quality structured input never get to operate on it.
 
-The structured-input assumption puts the burden on the human to make up for the model's processing limits. Input inversion reverses that: build tools that handle the translation, and let the human stay raw.
+The structured-input assumption puts the burden on the human to make up for the model's processing limits. Input inversion moves that burden to the tooling. Purpose-built tools handle the translation. The human contributes raw thinking, uncompressed, in whatever form it naturally takes.
 
 ---
 
@@ -94,9 +97,9 @@ Finally, compound evaluation collapses when a model tries to assess multiple dim
 
 ### 4.3 The Output
 
-The production site petersalvato.com was compiled from this unstructured corpus. Every page was processed by the accommodation tools, evaluated by decomposed lenses, and verified against voice patterns extracted from conversation. A blind third-party assessment classified the output as direct human writing, not AI-assisted.
+The production site petersalvato.com was compiled from this unstructured corpus. Every page was processed by the accommodation tools, evaluated by decomposed lenses, and verified against voice patterns extracted from conversation. Informal review has consistently classified the output as human-written rather than AI-assisted.
 
-The quality came from the depth of the raw material, not from structuring the input. A structured prompt gives the tools one sanitized snapshot. The unstructured corpus gave them three years of how I actually think.
+The quality came from the depth of the raw material, not from structuring the input. A structured prompt gives the tools one sanitized snapshot. The unstructured corpus gave them three years of how I actually think, including the parts I would have edited out.
 
 ---
 
@@ -110,7 +113,7 @@ The conventional model:
 
 The inverted model:
 
-**Human** (thinks out loud) → **Raw input** → **Accommodation tools** (structure for model) → **Model** → **Output**
+**Human** (thinks out loud) → **Dump** → **Accommodation tools** (structure for model) → **Model** → **Output**
 
 The difference is where the structuring happens. In the conventional model, the human does it before the input reaches any system. In the inverted model, purpose-built tools do it after the human has finished thinking. The human contributes raw material. The tools translate it into whatever structure the model needs.
 
@@ -120,19 +123,19 @@ The inverted model produces better results for three reasons:
 
 **Better tools for the job.** The accommodation tools are designed specifically for the translation between raw human thinking and model-ready input. They handle voice extraction, knowledge traversal, story mining, context marking, and decomposed evaluation. A human pre-structuring their prompt is doing ad hoc translation without specialized tooling.
 
-**Preserved cognitive state.** The act of pre-structuring disrupts the thinking it's trying to capture. A practitioner who pauses to format their insight into a well-structured prompt has already lost the flow state that produced the insight. Voice dictation and raw conversational input preserve the cognitive state the thinking happened in.
+**Preserved cognitive state.** The act of pre-structuring disrupts the thinking it's trying to capture. You have an insight, you stop to format it into a clean prompt, and by the time you're done formatting, you've lost the thread that produced the insight in the first place. Voice dictation and raw conversational input preserve the cognitive state the thinking happened in.
 
 ---
 
 ## 6. The Bidirectional Accommodation
 
-Input inversion is one half of a bidirectional accommodation pattern described in the [accommodation design framework]https://petersalvato.com/research/accommodation-design/) (Salvato, 2026).
+Input inversion is one half of a bidirectional accommodation pattern described in the [accommodation design framework](https://petersalvato.com/research/accommodation-design/) (Salvato, 2026).
 
 The human's processing reality: ideas lose fidelity when forced into structure at the point of capture. The act of organizing, outlining, or formatting disrupts the thinking it's trying to capture. When the burden of structure is removed, the human can talk, dictate, answer questions. What comes out carries the maker's actual voice, actual thinking, actual structure.
 
 The model's processing reality: context limits, attention degradation, instruction sensitivity. The accommodation is structured input: decomposed tasks, one objective at a time, individualized evaluation criteria, context markers at cognitive turning points.
 
-In [FormWork](https://petersalvato.com/systems/formwork/), the pour is the first accommodation, aimed at the human. Every other tool accommodates the model. Both are designed from the same question: what does this system actually need?
+In [FormWork](https://petersalvato.com/systems/formwork/), the dump is the first accommodation, aimed at the human. Every other tool accommodates the model. Both are designed from the same question: what does this system require to do its job?
 
 The classroom version of this: a student speaks freely, and the teacher takes what was expressed and builds the next instructional step around the student's processing profile. The burden of translation sits with the teacher, not the student. The student's job is to think. The teacher's job is to make that thinking usable.
 
@@ -158,9 +161,9 @@ Input inversion does not require three years and thousands of sessions. The prin
 
 **A few dozen conversations.** Open-ended sessions where the practitioner thinks out loud about their work. "Tell me about what you're building." The interview skill processes these into stories, language patterns, and concept maps.
 
-**A single dictated session.** Even one conversation where someone speaks freely about their work produces richer material than a carefully structured brief. The rawness is the asset, not the obstacle.
+**A single dictated session.** Even one conversation where someone speaks freely about their work produces richer material than a carefully structured brief.
 
-The barrier to entry is not technical infrastructure. It's the willingness to stop organizing input and start organizing tools. The industry has trained practitioners to perform for the model: clean prompts, specific instructions, defined formats. Input inversion asks them to stop performing and start thinking out loud.
+I think the barrier to entry is less about technical infrastructure and more about habit. The industry has trained practitioners to perform for the model: clean prompts, specific instructions, defined formats. Unlearning that performance is harder than building the tools. Input inversion asks you to stop organizing your input and start organizing the system that processes it, and most people find the first part harder than the second.
 
 ---
 
@@ -172,7 +175,7 @@ The evidence from agentic workflows (Ng, 2025), voice interaction research, and 
 
 **The corpus is an asset class.** Three years of unstructured thinking is a dataset. The conversational history, the voice notes, the 2 AM brainstorming sessions contain information that no structured brief captures: how the person actually thinks, the language they reach for, the stories that matter to them, the moments where their understanding shifted.
 
-What should the default interface be? Speech. The industry's investment in voice AI (projected $29.28 billion speech recognition market by 2026) implicitly acknowledges that speech is a richer input modality. Input inversion provides the framework for why: speech preserves cognitive state, produces more detailed material, and bypasses the lossy compression of typing.
+What should the default interface be? Speech. The industry's investment in voice AI (projected $29.28 billion speech recognition market by 2026, Allied Market Research) implicitly acknowledges that speech is a richer input modality. Input inversion provides the framework for why: speech preserves cognitive state, produces more detailed material, and bypasses the lossy compression of typing.
 
 If raw input is more valuable than structured input, the competitive advantage shifts to tool design. The practitioner who builds the best translation layer between raw human thinking and model-ready input produces the best output, regardless of how "good" their prompts are.
 
@@ -184,7 +187,7 @@ Each compiled document goes back into the data source. The next traversal has ac
 
 This is why unstructured input is not just richer at the point of capture. It is a better long-term investment. Structured prompts are consumable. You use them and they're done. An unstructured corpus is generative. The same material I recorded in 2023 is still producing new compiled documents in 2026, each traversal asking a question I hadn't thought to ask when I was talking. The knowledge traversal tool makes this practical: sequential processing through a large corpus, holding a specific conceptual angle, compiling a focused output that would take a human researcher weeks to produce manually. The LLM doesn't get tired of reading the same conversations again. It just reads them differently.
 
-The competitive implication is direct. Two practitioners with the same tools and the same model, one who accumulated three years of unstructured thinking and one who wrote three years of structured prompts, are not in the same position. The first has a renewable source that yields new compiled documents on demand. The second has a folder of spent instructions.
+Two practitioners with the same tools and the same model, one who accumulated three years of unstructured thinking and one who wrote three years of structured prompts, are not in the same position. The first can run a new traversal tomorrow and get a document that surfaces connections they hadn't considered. The second would need to start writing new prompts from scratch.
 
 ---
 
@@ -194,9 +197,9 @@ The AI industry's foundational assumption, that quality output requires structur
 
 Input inversion formalizes what this evidence suggests: reverse the burden of structure from the human to the tooling. Let humans think out loud. Build tools that translate raw thinking into model-ready input. The output improves because the source material is richer, more detailed, and more honest than anything a structured prompt captures.
 
-This principle was developed through three years of applied practice and is demonstrated by a production site compiled entirely from unstructured conversational data. It extends the [accommodation design framework]https://petersalvato.com/research/accommodation-design/) (Salvato, 2026) into a bidirectional pattern: structure for the model, freedom for the human.
+This principle came out of three years of applied practice and is demonstrated by a production site compiled entirely from unstructured conversational data. It extends the [accommodation design framework](https://petersalvato.com/research/accommodation-design/) (Salvato, 2026) into a bidirectional pattern: structure for the model, freedom for the human.
 
-The question for practitioners is not "how do I write a better prompt?" It is "how do I build tools that let me stop writing prompts and start thinking out loud?"
+The competitive advantage is in the tooling between the human and the model, and in the depth of the raw material those tools have to work with. That is where the quality comes from.
 
 ---
 
@@ -205,11 +208,11 @@ The question for practitioners is not "how do I write a better prompt?" It is "h
 The following open-source tools implement input inversion:
 
 - **[FormWork](https://petersalvato.com/systems/formwork/)**: The accommodation design process. Coordination harness for all tools during a project.
-- **[SavePoint Syntax](https://github.com/PeterSalvato/Savepoint.Protocol)**: Context preservation markup for cognitive turning points (v3.1)
+- **[SavePoint Syntax](https://github.com/PeterSalvato/Savepoint.Protocol)**: Context preservation markup for cognitive turning points (v3.2)
 - **[LensArray](https://petersalvato.com/systems/lensarray/)**: Decomposed evaluation with practitioner-extracted lenses
 - **[Skills Architecture](https://github.com/PeterSalvato/formwork)**: Accommodation tools including voice sampling, knowledge traversal, and interview
 
-The production site [petersalvato.com](https://petersalvato.com) was compiled from unstructured conversational data using these tools.
+The production site [petersalvato.com](https://petersalvato.com/) was compiled from unstructured conversational data using these tools.
 
 ---
 
@@ -223,9 +226,10 @@ The production site [petersalvato.com](https://petersalvato.com) was compiled fr
 - RAGFlow (2025). "From RAG to Context: A 2025 Year-End Review of RAG."
 - Squirro (2026). "RAG in 2026: Bridging Knowledge and Generative AI."
 - Fast Company (2025). "The prompt engineer job title has all but disappeared."
+- Allied Market Research (2019). "Speech Recognition Market to Grow $29.28 Billion by 2026." alliedmarketresearch.com.
 - Salvato, P. (2026). "AI Governance as Accommodation Design." DOI: 10.5281/zenodo.18941231.
 - Salvato, P. (2026). "A Different Kind of Harness: AI as Cognitive Prosthetic Through Mutual Accommodation." DOI: 10.5281/zenodo.18962893.
-- Salvato, P. (2025). Savepoint Syntax v3.1. [github.com/PeterSalvato/Savepoint.Protocol](https://github.com/PeterSalvato/Savepoint.Protocol)
+- Salvato, P. (2025–2026). Savepoint Syntax v3.2. [github.com/PeterSalvato/Savepoint.Protocol](https://github.com/PeterSalvato/Savepoint.Protocol)
 
 ---
 
@@ -237,4 +241,4 @@ You are free to share and adapt this material for any purpose, including commerc
 
 ---
 
-*Peter Salvato is a design engineer based in Fort Lauderdale, FL. He studied Visual Communication at the School of Visual Arts, taught special education in Brooklyn, NY, and spent thirteen years building the front end of an enterprise recruiting platform. His AI governance work applies twenty-five years of practice across construction, print production, pedagogy, enterprise software, and brand systems to the question of what AI systems actually need to produce quality output. His work is published at [petersalvato.com](https://petersalvato.com).*
+*Peter Salvato is a design engineer based in Fort Lauderdale, FL. He studied Visual Communication at the School of Visual Arts, taught special education in Brooklyn, NY, and spent thirteen years building the front end of an enterprise recruiting platform. His AI governance work applies twenty-five years of practice across construction, print production, pedagogy, enterprise software, and brand systems to the question of what AI systems actually need to produce quality output. His work is published at [petersalvato.com](https://petersalvato.com/).*
